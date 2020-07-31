@@ -3,7 +3,7 @@ extends layouts/main
 block content
     .form-container
         form(action=routes.login, method="post")
-            input(type="email", name="email", placeHolder="Email")
-            input(type="password", name="password", placeHolder="Password")
+            input(type="email", name="email", placeHolder="Email", required=true)
+            input(type="password", name="password", placeHolder="Password", required=true)
             input(type="submit", value="Log In")
         include partials/socialLogin
